@@ -13,11 +13,6 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetMouseButton(0) && !gameOver && !gameOver && !gameOver)
