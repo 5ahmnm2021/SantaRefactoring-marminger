@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private const string Obstacle = "Obstacle";
     private const string SantaDeath = "SantaDeath";
     Rigidbody2D rb;
-    Animator anim, anim2, anim3, anim4, anim5;
+    Animator anim;
     [SerializeField] float jumpForce;
     
 
