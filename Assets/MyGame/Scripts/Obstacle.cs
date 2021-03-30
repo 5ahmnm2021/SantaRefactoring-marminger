@@ -10,11 +10,6 @@ private void Awake()
     rb = GetComponent<Rigidbody2D>();
 }
 
-void Start()
-{
-        
-}
-
 void Update()
 {
 
