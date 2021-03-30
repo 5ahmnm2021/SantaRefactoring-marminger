@@ -14,11 +14,6 @@ public class TextureScroll : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        
-    }
-
     private void FixedUpdate()
     {
         if (scroll)
