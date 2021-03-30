@@ -40,7 +40,6 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger(Name);
 
         GameManager.instance.IncrementScore();
-        Debug.Log("DeleteMe");
     }
 
     private bool SetGameOverTrue()
