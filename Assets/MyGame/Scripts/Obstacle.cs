@@ -3,7 +3,7 @@
 public class Obstacle : MonoBehaviour
 {
 Rigidbody2D rb;
-[SerializeField] private float moveSpeed;
+[SerializeField] private float MoveSpeed;
 
 private void Awake()
 {
@@ -28,7 +28,7 @@ void Update()
 private void FixedUpdate()
 {
 
-    rb.velocity = Vector2.left * moveSpeed;
+    rb.velocity = Vector2.left * MoveSpeed;
 
 }
 }
