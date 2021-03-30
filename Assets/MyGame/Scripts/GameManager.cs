@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour
         foreach(TextureScroll item in scrollingObjects)
         {
             item.scroll = false;
-            Debug.Log(item.name);
         }
     }
 
