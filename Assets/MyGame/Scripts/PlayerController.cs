@@ -3,9 +3,9 @@
 public class PlayerController : MonoBehaviour
 {
     private const string Name = "Jump";
-    private const string V = "Ground";
-    private const string V1 = "Obstacle";
-    private const string StateName = "SantaDeath";
+    private const string Ground = "Ground";
+    private const string Obstacle = "Obstacle";
+    private const string SantaDeath = "SantaDeath";
     Rigidbody2D rb;
     Animator anim, anim2, anim3, anim4, anim5;
     [SerializeField] float jumpForce;
@@ -48,18 +48,18 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)   {
-        if(collision.gameObject.tag == V)
+        if(collision.gameObject.tag == Ground)
         {
             grounded = true;}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == V1)
+        if(collision.gameObject.tag == Obstacle)
         {
             GameManager.instance.GameOver();
             Destroy(collision.gameObject);
-            anim.Play(StateName);
+            anim.Play(SantaDeath);
             gameOver = SetGameOverTrue();
         }
     }
