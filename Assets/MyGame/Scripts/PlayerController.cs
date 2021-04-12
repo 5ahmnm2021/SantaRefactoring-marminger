@@ -2,7 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-    private const string Name = "Jump";
+    private const string Jump = "Jump";
     private const string Ground = "Ground";
     private const string Obstacle = "Obstacle";
     private const string SantaDeath = "SantaDeath";
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = Vector2.up * jumpForce;
 
-        anim.SetTrigger(Name);
+        anim.SetTrigger(Jump);
 
         GameManager.instance.IncrementScore();
     }
